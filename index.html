@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    
+    <title>Cargo</title>
+    <style>
+        p{
+            font-family: 'Nunito', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 146%;
+            color: #FFFFFF;
+
+        }
+        .container{
+            width: 1920px;
+            justify-content: start;
+            display: grid;
+            background-color: #282B38;
+            grid-template-areas: "header header"
+            "photo photo";
+        }
+        .head{
+            display: grid;
+            justify-content: start;
+            grid-area: head;
+            grid-template-areas: 
+            "logo menu request";
+        }
+        .menu{
+            grid-area: menu;
+            display:grid;
+            font-size: 12px;
+            grid-template-areas: 
+            "price service about contacts checkout";
+        }
+        .logo{
+            padding: 10px;
+            grid-area: logo;
+        }
+        #price{
+            padding: 10px;
+            grid-area: price;
+ 
+        }
+        #service{
+            padding: 10px;
+            grid-area: service;
+
+        }
+        #about{
+            padding: 10px;
+            grid-area: about;
+
+        }
+        #contacts{
+            padding: 10px;
+            grid-area: contacts;
+
+        }
+        #checkout{
+            padding: 10px;
+            grid-area: checkout;
+
+        }
+        .request{
+            padding: 10px;
+            grid-area: request;
+            
+        }
+        #button1{
+            
+            border-radius: 50px;
+            background-color: #E58D35;
+        }
+        .photo{
+            display: flex;
+            justify-content:center;
+            align-self: center;
+            background-color: #282B38;
+        }
+        .mainphoto{
+            display: flex;
+        }
+         #phototext{
+            width: 463px;
+        }
+        .footer{
+            width: 1920px;
+            justify-content: start;
+            align-self: center;
+            display: grid;
+            background-color: #282B38;
+            grid-template-areas: "logot menufoot"
+        }
+        .menufoot{
+            justify-content: start;
+            grid-area: menu;
+            display:grid;
+            font-size: 12px;
+            grid-template-areas: 
+            "price about contacts";
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="container">
+        <div class="head">
+            <div class="logo">
+                <object type="image/png" data="assets/logo.png" width="110vw" height="50vh"></object>
+                </div>
+            <div class="menu">
+                <div id="price"><p>Цены и сроки</p></div>
+                <div id="service"><p>Услуги</p></div>
+                <div id="about"><p>О компании</p></div>
+                <div id="contacts"><p>Контакты</p></div>
+                <div id="checkout"><p>Оформить заказ</p></div>
+            </div>
+            <div class="request">
+                <button id="button1"><p>Оставить заявку</p></button>
+            </div>
+           
+        </div> 
+            
+    </div>
+        <div class="photo">
+            <div class="mainphoto">
+            <object  type="image/png" data="assets/main.png" width="1000vw" height="500vh"></object>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        
+        <div class="menufoot">
+            <div id="price"><p>Цены и сроки</p></div>
+            <div id="about"><p>О компании</p></div>
+            <div id="contacts"><p>Контакты</p></div>
+        </div>
+    </div>
+</body>
+</html>

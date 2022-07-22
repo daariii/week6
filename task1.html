@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>task1</title>
+    <style>
+        p{
+            text-align: center;
+        }
+        .container{
+            
+            display: grid;
+            grid-template-columns: 1.75fr 1.75fr 1fr;
+            grid-template-rows: 1fr 2fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "head head head"
+            "left left right"
+            "left left right"
+            "left left right"
+            "left left right"
+            "foot foot foot";
+            height: 100vh;
+        }
+        .head{
+            
+            background-color: rgba(143, 133, 133, 0.678);
+            grid-area: head;
+        }
+        .foot{
+
+            display: grid;
+            height: 10vh;
+            background-color: rgba(143, 133, 133, 0.678);
+            grid-area: foot;
+            grid-template-areas: "footblock1 footblock2 footblock3 footblock4";
+        }
+        .left{
+            
+            display: grid;
+            background-color: burlywood;
+            grid-area: left;
+            align-items: center;
+            grid-template-areas: 
+            "block1 block1"
+            "block1 block1"
+            "block2 block3"
+            "block4 block4";
+        }
+        .right{
+            
+            background-color: aquamarine;
+            grid-area: right;
+        }
+        .block1{
+            
+            justify-content: center;
+            align-items: center;
+            grid-area: block1;
+            background-color: burlywood;
+        }
+        .block2{
+            margin: 4vw;
+            width: 80%;
+            height: 50%;
+            grid-area: block2;
+            background-color: coral;
+        }
+        .block3{
+            margin: 4vw;
+            width: 80%;
+            height: 50%;
+            grid-area: block3;
+            background-color: coral;
+        }
+        .block4{
+            margin: 4vw;
+            width: 90%;
+            height: 50%;
+            grid-area: block4;
+            background-color: coral;
+        }
+        .footblock1{
+            margin: 1vw;
+            justify-items: center;
+            width: 80%;
+            height: 50%;
+            grid-area: footblock1;
+            background-color: rgb(255, 255, 255);
+        }
+        .footblock2{
+            margin: 1vw;
+            width: 80%;
+            height: 50%;
+            grid-area: footblock2;
+            background-color: rgb(255, 255, 255);
+        }
+        .footblock3{
+            margin: 1vw;
+            width: 80%;
+            height: 50%;
+            grid-area: footblock3;
+            background-color: rgb(255, 255, 255);
+        }
+        .footblock4{
+            margin: 1vw;
+            width: 80%;
+            height: 50%;
+            grid-area: footblock4;
+            background-color: rgb(255, 255, 255);
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="head"><p>[Шапка]</p></div>
+        <div class="left">
+            <div class="block1"><p>[Основная часть]</p></div>
+            <div class="block2"><p>[Еще 1]</p></div>
+            <div class="block3"><p>[Еще 2]</p></div>
+            <div class="block4"><p>[Еще 3]</p></div>
+        </div>
+        <div class="right"><p>[Боковая часть]</p></div>
+        <div class="foot">
+            <div class="footblock1"><p>[Секция футера 1]</p></div>
+            <div class="footblock2"><p>[Секция футера 2]</p></div>
+            <div class="footblock3"><p>[Секция футера 3]</p></div>
+            <div class="footblock4"><p>[Секция футера 4]</p></div>
+        </div>
+    </div>
+</body>
+</html>
